@@ -1,0 +1,258 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15-sep-2020, 10:44:05
+    Author     : adrian
+*/
+body{
+    background-color: purple;
+    
+}
+
+.banderas{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    border: 1px solid white;
+}
+
+.cabecera{
+    
+    background-color: black;
+    height: 100px;
+    color: white;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 400px;
+    
+}
+
+
+#logo1{
+    width: 100px;
+    height: 100px;
+    
+    
+}
+
+#titulo{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 50px;
+}
+
+.cuerpo{
+    
+    height: 450px;
+    background-image: url(../Imagenes/road-1072823_1920.jpg);
+    background-repeat:no-repeat;
+}
+
+#busqueda{
+    margin-left: 350px;
+    margin-top: 100px;
+    background-color: activeborder;
+    color: black;
+    width: 40%;
+    text-align: center;
+}
+
+h2{
+    margin-top: 400px;
+    text-align: center;
+    color: white;
+    font-size: 100px;
+}
+
+#hotel{
+    border-top: solid 3px greenyellow;
+    border-right: solid 3px green;
+    background-color: white;
+}
+
+#actividades{
+   border-top: solid 3px greenyellow;
+    background-color: white;
+}
+
+.fas{
+    font-size: 100px;
+    margin-left: 200px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+#registrarse{
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+#iniciarSesion{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.btn{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input[type=submit]:hover{
+  background-color:green;
+  
+}
+
+.pie{
+    height: 180px;
+    border-top: solid 3px green;
+    color: black;
+    background-color: white;
+}
+
+.fab{
+    font-size: 40px;
+    margin-right: 5px;
+    margin-left: 35px;
+}
+
+#facebook{
+    color: blue;
+    
+}
+
+#twitter{
+    color:aqua;
+}
+
+#youtube{
+    color:red;
+}
+
+#instagram{
+    color: pink;
+}
+
+.informacion{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+#logoPie{
+    width: 150px;
+    height: 150px;
+    margin-left: 110px;
+}
+
+input[type=text], input[type=date], input[type=file] {
+  background-color: #a5a4a4;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px;
+  width: 75%;
+  border: 2px solid #111010;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 7px 7px 0 rgba(12, 11, 11, 0.3);
+ 
+}
+
+.cancelar{
+    margin-top: 30px
+}
+
+.cerrarSesion{
+    margin-top: 30px;
+    margin-left: 200px;
+    
+}
+
+#previa{
+    margin-left: 500px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+td{
+    background-color: white;
+}
+table#t01 {
+  width: 80%;    
+  background-color: aquamarine;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 50px;
+}
+
+table#t02 {
+  width: 80%;    
+  background-color: aquamarine;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 100%;
+ 
+}
+
+#menu{
+    margin-left: 600px;
+}
+
+#modificacion{
+     margin-left: 550px;
+}
+
+.menu{
+    margin-left: 600px;
+}
+
+#tituloList{
+    text-align: center;
+    color: black;
+     font-size: 50px;
+}
+
+#eliminarHotel{
+    margin-left: 550px;
+}
+
+#eliminarReserva{
+    margin-left: 550px;
+}
+
+#eliminarActiv{
+     margin-left: 550px;
+}
+
+
+#opciones{
+    margin-left: 300px;
+    margin-top: 10px;
+}
+
+#mensaje{
+    margin-left: 400px;
+}
