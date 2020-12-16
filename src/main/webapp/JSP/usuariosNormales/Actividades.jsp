@@ -17,12 +17,14 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="StyleSheet" href="CSS/estilos.css" type="text/css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <jsp:useBean id="hoteles" scope="page"  class="es.albarregas.beans.Hotel" />    
+        <jsp:useBean id="hoteles" scope="page"  class="es.albarregas.beans.Hotel" />   
+        <jsp:useBean id="usuario" scope="page"  class="es.albarregas.beans.Usuario"/>    
         <jsp:useBean id="actividades" scope="page"  class="es.albarregas.beans.Actividad" />    
 
         <title>Actividades</title>
     </head>
     <body style="background-color: white">
+        <c:set var="usuario" value="${sessionScope.usuario}"/>
         <div class="container-fluid" style="border: groove 10px greenyellow">
             <div class="row cabecera">
                 <div class="col-4 ">
@@ -57,12 +59,12 @@
                     <c:forEach var="elemento" items="${requestScope.actividades}">
 
                         <c:choose>
-                            <c:when test="${fn:startsWith(elemento.fotoActiv, defecto)}">
+                             <c:when test="${fn:startsWith(elemento.fotoActiv, defecto)}">
                                 <img src="${contexto}/Imagenes/actividades/${elemento.fotoActiv}" width="150" height="150" >
                                 <strong style="font-size: 30px">
                                     Nombre: Hotel ${elemento.nombreActiv},${elemento.lugar}
                                 </strong>
-
+ 
                                 <strong style="font-size: 17px">
                                     <p>
                                         Descripcion: ${elemento.descripcion}<br>
@@ -74,6 +76,7 @@
                                 </strong> 
 
                                   <form action="Reserva">
+                                      <input type="hidden" name="idUsuario" value="${usuario.idUsuario}"/>
                                     <input type="hidden" name="idActividad" value="${elemento.idActividad}"/>
                                     <p><input type="submit" name="reservarActiv" value="Reservar" class="btn col-2 btn-primary" /></p>
                                 </form>    
@@ -98,6 +101,7 @@
                                     </p>
                                 </strong> 
                                 <form action="Reserva">
+                                    <input type="hidden" name="idUsuario" value="${usuario.idUsuario}"/>
                                     <input type="hidden" name="idActividad" value="${elemento.idActividad}"/>
                                     <p><input type="submit" name="reservarActiv" value="Reservar" class="btn col-2 btn-primary" /></p>
                                 </form>   
@@ -122,6 +126,7 @@
                                     </p>
                                 </strong> 
                                   <form action="Reserva">
+                                      <input type="hidden" name="idUsuario" value="${usuario.idUsuario}"/>
                                       <input type="hidden" name="idActividad" value="${elemento.idActividad}"/>
                                     <p><input type="submit" name="reservarActiv"  value="Reservar" class="btn col-2 btn-primary" /></p>
                                 </form>   

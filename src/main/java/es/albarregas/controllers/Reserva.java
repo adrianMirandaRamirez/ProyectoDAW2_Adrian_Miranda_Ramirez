@@ -66,10 +66,11 @@ public class Reserva extends HttpServlet {
         }else if(request.getParameter("reservarActiv")!=null){
             idActividad = request.getParameter("idActividad");
             actividad = actividadesDAO.getDatosActividad(idActividad);
-            reservas.setIdActividad(actividad);            
-            reservas.setFechaReserva(Date.valueOf(request.getParameter("fecha")));
+            reservas.setIdActividad(actividad);        
+            System.out.println(actividad.getFecha());
+            reservas.setFechaReserva(actividad.getFecha());
             reservas.setIdUsuario(Integer.parseInt(request.getParameter("idUsuario")));
-
+            //request.getParameter("fecha")
         }
         
         reservasDAO.nuevaReserva(reservas);
