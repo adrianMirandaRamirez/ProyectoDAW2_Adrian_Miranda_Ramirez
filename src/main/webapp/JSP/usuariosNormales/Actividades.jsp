@@ -59,12 +59,12 @@
                     <c:forEach var="elemento" items="${requestScope.actividades}">
 
                         <c:choose>
-                            <c:when test="${fn:startsWith(elemento.fotoActiv, defecto)}">
+                             <c:when test="${fn:startsWith(elemento.fotoActiv, defecto)}">
                                 <img src="${contexto}/Imagenes/actividades/${elemento.fotoActiv}" width="150" height="150" >
                                 <strong style="font-size: 30px">
                                     Nombre: Hotel ${elemento.nombreActiv},${elemento.lugar}
                                 </strong>
-
+ 
                                 <strong style="font-size: 17px">
                                     <p>
                                         Descripcion: ${elemento.descripcion}<br>
